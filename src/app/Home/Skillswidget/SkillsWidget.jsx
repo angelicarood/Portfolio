@@ -5,6 +5,8 @@ import Image from "next/image";
 import Js from "./Js.png";
 import Html from "./Html.png";
 import Css from "./Css.png";
+import Java from "./Java.png";
+
 
 const SkillsWidget = ({ title, content, skills }) => {
   return (
@@ -19,11 +21,11 @@ const SkillsWidget = ({ title, content, skills }) => {
           viewBox="0 0 22 22"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="{{IsDarkMode ? 'stroke-white' : 'stroke-gray-800'}}"
+          className="{{IsDarkMode ? 'stroke-white' : 'stroke-gray-800'}}"
         >
           <path
             d="M3.75 13.5L14.25 2.25L12 10.5H20.25L9.75 21.75L12 13.5H3.75Z"
-            class="stroke-current"
+            className="stroke-current"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -34,20 +36,21 @@ const SkillsWidget = ({ title, content, skills }) => {
       </h2>
       <p className="mb-6">{content}</p>
       <ul>
-        {skills.map((skill, index) => (
-          <li key={`skill-${index}`} className="flex items-center mb-4">
-            <Image src={skill.icon} alt={`${skill.organization} Skill Icon`} width={60} height={60} />
-            <div className="flex flex-col">
-              <h3 className="font-semibold">{skill.name}</h3>
-              <div className="flex items-center">
-                <div
-                  className="bg-teal-400 h-4 border-gray-200 border shadow-md  mr-2"
-                  style={{ width: `${skill.proficiency}%` }}
-                ></div>
-              </div>
+      {skills.map((skill, index) => (
+        <li key={`skill-${index}`} className="flex items-center mb-4">
+          <Image src={skill.icon} alt={`${skill.name} Skill Icon`} width={70} height={70} />
+          <div className="flex flex-col">
+            <h3 className="font-semibold">{skill.name}</h3>
+            <div className="flex items-center">
+              <div
+                className="bg-teal-400 h-4 border-gray-200 border shadow-md  mr-2"
+                style={{ width: `${skill.proficiency}%` }}
+              ></div>
             </div>
-          </li>
-        ))}
+          </div>
+        </li>
+      ))}
+
       </ul>
     </section>
   );
@@ -70,9 +73,10 @@ SkillsWidget.defaultProps = {
 };
 
 const skills = [
-  { name: "HTML", proficiency: 60, icon: Html },
-  { name: "CSS", proficiency: 50, icon: Css },
-  { name: "JavaScript", proficiency: 75, icon: Js },
+  { name: "HTML", proficiency: 75, icon: Html },
+  { name: "JAVA", proficiency: 75, icon: Java },
+  { name: "CSS", proficiency: 85, icon: Css },
+  { name: "JavaScript", proficiency: 30, icon: Js },
 ];
 
 function App() {
@@ -80,7 +84,7 @@ function App() {
     <>
       <SkillsWidget
         title={"Skills"}
-        content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
+        content={"TOP SKILLS I HAVE EXPERIENCE WITH."}
         skills={skills}
       />
     </>
@@ -88,3 +92,4 @@ function App() {
 }
 
 export default App;
+

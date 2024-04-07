@@ -5,24 +5,24 @@ const ArticleCard = () => {
   const articles = [
     {
       date: "2022-01-01",
-      title: "React Hooks: Understanding useState and useEffect",
+      title: "Teaching English as a Second Language (ESL)",
       content:
-        "Dive deep into two fundamental React hooks, useState and useEffect, with this article. Learn how to manage state and handle side effects in your React components using these hooks. The article also covers fetching data from APIs and handling asynchronous operations.",
-      link: "https://www.robinwieruch.de/react-hooks-fetch-data",
+      "Teaching English as a Second Language is a high-demand subject of instruction that continues to experience growth in schools across the country. As children from foreign countries continue to immigrate to the United States and enroll in schools here, the number of students whose native language is not English continues to grow",
+      link: "https://teach.com/careers/become-a-teacher/what-can-i-teach/tesol/",
     },
     {
-      date: "2022-01-15",
-      title: "React Testing Library: A Complete Guide",
+      date: "2024-03-05",
+      title: "How to Become a Software Engineer from Scratch in 2024?",
       content:
-        "Learn how to test your React components with React Testing Library. This article covers the fundamentals of testing React components, including rendering components, interacting with them, and making assertions. You will also learn how to test asynchronous operations and handle edge cases.",
-      link: "https://www.robinwieruch.de/react-testing-library",
+        "Software engineering is a cornerstone of technological progress in an era where software is seamlessly integrated into every aspect of our lives. It encompasses the art and science of designing, developing, testing, and maintaining software systems. From small utility applications to complex, mission-critical systems, software engineering is the discipline that transforms concepts into functional, reliable, and user-friendly software.",
+      link: "https://www.simplilearn.com/how-to-become-a-software-engineer-article",
     },
     {
-      date: "2022-02-01",
-      title: "React Router: A Complete Guide",
+      date: "2022-21-01",
+      title: "How To Be A More Creative Developer",
       content:
-        "Master React Router with this comprehensive guide. Learn how to set up routing in your React applications, including nested routes, route parameters, and programmatic navigation. The article also covers authentication and authorization, as well as protecting routes in your application.",
-      link: "https://www.robinwieruch.de/react-router",
+        "While poets, screenwriters, painters, and other artists are often praised for their creativity, too often, programmers are left out of the spotlight.",
+      link: "https://www.codecademy.com/resources/blog/how-to-be-a-more-creative-developer/",
     },
   ];
 

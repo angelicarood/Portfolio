@@ -2,10 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Image from "next/image";
 
-import Microsoft from "./Microsoft.png";
-import Spotify from "./Spotify.png";
-import Slack from "./Slack.png";
-import Audible from "./Audible.png";
+import CorEnglish from "./CorEnglish.png";
+import Esl from "./Esl.png";
+
 
 const WorkWidget = ({ title, content, experiences }) => {
   return (
@@ -83,35 +82,21 @@ const App = () => {
       <div className="max-w-screen-md">
         <WorkWidget
           title={"Work"}
-          content={"loren vrjngsllsnrk"}
+          content={"Work experience"}
           experiences={[
             {
-              logo: Slack,
-              organization: "Slack",
-              jobTitle: "SOFTWARE ENGINEER",
-              startYear: 2016,
-              endYear: null,
+              logo: CorEnglish,
+              organization: "CorEnglish - English School",
+              jobTitle: "ESL Teacher - Online",
+              startYear: 2019,
+              endYear: 2023,
             },
             {
-              logo: Spotify,
-              organization: "Spotify",
-              jobTitle: "SOFTWARE ENGINEER",
-              startYear: 2014,
-              endYear: 2015,
-            },
-            {
-              logo: Microsoft,
-              organization: "Microsoft",
-              jobTitle: "SOFTWARE ENGINEER",
-              startYear: 2012,
-              endYear: 2013,
-            },
-            {
-              logo: Audible,
-              organization: "Audible",
-              jobTitle: "SOFTWARE ENGINEER",
-              startYear: 2010,
-              endYear: 2011,
+              logo: Esl,
+              organization: "Eisenhow - English as a second language school",
+              jobTitle: "ESL Teacher - Online",
+              startYear: 2023,
+              endYear: 2024,
             },
           ]}
         />

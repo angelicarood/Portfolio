@@ -8,7 +8,7 @@ const UsesSection = ({ items }) => {
     <section className="flex flex-col p-8">
       <div className="flex flex-col gap-y-16">
         {items.map((group, index) => (
-          <div key={index} className="flex flex-row items-start gap-x-8 pl-4 border-l-2 border-gray-300">
+          <div key={index} className="flex flex-col md:flex-row items-start gap-x-8 pl-4 border-l-2 border-gray-300">
             <h2 className="text-xl font-bold min-w-[250px]">{group.groupName}</h2>
             <div className="flex flex-col gap-y-8">
               {group.items.map((item, idx) => (
